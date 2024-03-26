@@ -1,0 +1,71 @@
+$main-bode: grey;
+
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+
+body {
+    background-color: $main-bode;
+}
+
+h1 {
+    color: red;
+}
+
+header {
+    background-color: pink;
+
+    h2 {
+        color: brown;
+    }
+
+    p {
+        color: chartreuse;
+    }
+}
+
+nav {
+
+    background-color: aqua;
+
+    ul {
+        list-style-type: none;
+        
+       
+
+        li {
+            display: inline-block;
+            margin-inline: 20px;
+            color: rgb(90, 30, 210);
+
+            &:hover{
+                color: brown;
+            }
+
+        }
+    }
+}
+
+@mixin btn-style{
+
+    
+    margin-left: 30px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+}
+
+.submit{
+    @include btn-style;
+    background-color: red;
+}
+
+.cancel{
+    @include btn-style;
+    background-color: blue;
+}

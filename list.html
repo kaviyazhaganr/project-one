@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style/testsass.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+        }
+
+        .list>li {
+            list-style-type: none;
+            display: inline-block;
+            background-color: azure;
+            padding-inline: 20px;
+            padding-block: 25px;
+            margin-right: 10px;
+            border: 1px solid red;
+            position: relative;
+
+
+        }
+
+        .list>li:hover .list1 {
+            display: block;
+        }
+
+        .list1 {
+            list-style-type: none;
+            position: absolute;
+            border: 1px solid red;
+            top: 100%;
+            display: none;
+        }
+
+        .lock {
+            /* transform: translateX(50px); */
+            border: 1px solid red;
+            /* transform: rotate(-20deg); */
+            /* transform: scale(0.5);
+            transform: skew(20deg); */
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            background-color: blue;
+            border: 1px solid red;
+        }
+
+        .box:hover {
+            background-color: blueviolet;
+            animation-name: box;
+            animation-duration: 4s;
+            animation-iteration-count: 4;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes box {
+
+            50% {
+
+                width: 500px;
+                background-color: aqua;
+            }
+
+            100% {
+                width: 700px;
+                background-color: black;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <ul class="list">
+            <li><a href="">one</a></li>
+            <li>dxvxv</li>
+            <li>one
+                <ul class="list1">
+                    <li>twodd</li>
+                    <li>threedd</li>
+                    <li>fourdddd</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- <div class="lock">
+        <img src="/lock.png" alt="">
+    </div> -->
+
+    <div class="box">
+
+    </div>
+
+    <h1> css border</h1>
+
+    <header>
+        <div>
+
+            <h2> The bupg</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates molestiae hic aut voluptatem nisi
+                ullam
+                reprehenderit sequi magni, neque animi doloribus eveniet, quis labore? In alias excepturi placeat
+                architecto
+                veniam?</p>
+        </div>
+
+    </header>
+
+    <nav>
+
+        <h2> menu</h2>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+        </ul>
+    </nav>
+    <div>
+        <a href="" class="submit">sumbit</a>
+        <a href=""class="cancel">cancel</a>
+
+    </div>
+    
+</body>
+
+</html>
